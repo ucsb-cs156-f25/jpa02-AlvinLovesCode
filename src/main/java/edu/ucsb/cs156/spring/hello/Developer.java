@@ -17,7 +17,7 @@ public class Developer {
 
     public static String getName() {
 
-        return "Alvin C.";
+        return "ALVIN KEN";
     }
 
     /**
