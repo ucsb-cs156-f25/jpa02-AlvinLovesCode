@@ -26,17 +26,29 @@ public class TeamTest {
     
     @Test
     public void equals_works_as_expected() {
-        Team team1 = new Team("test-team");
-        assert(team.equals(team1));
+        Team team = new Team("test-team");
+        team.addMember("member1");
 
+
+        Team team1 = new Team("test-team");
+        team1.addMember("member1");
+
+        assert(team.equals(team1));
         assert(team.equals(team));
         
         Team team2 = new Team("another-team");
+        team2.addMember("member1");
         assert(!team.equals(team2));
+
+        Team team3 = new Team("test-team");
+        team3.addMember("member2");
+        assert(!team.equals(team3));
 
         assert(!team.equals(null));
 
+        assert(!team.equals("not a team"));
     }
+    
 
     @Test
     public void hashCode_works_as_expected() {
