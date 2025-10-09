@@ -41,7 +41,7 @@ public class Developer {
         team.addMember("ALVIN KEN");
         team.addMember("JOSHUA CHACKO");
         team.addMember("JAYDEN JUN KHAI");
-        team.addMember("HUAKE SEBASTIAN");
+        team.addMember("HAUKE SEBASTIAN");
         team.addMember("BEN");
         team.addMember("TEJ SRI");
         return team;
